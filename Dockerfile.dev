@@ -12,4 +12,4 @@ WORKDIR $APP_HOME
 ADD Gemfile $APP_HOME/
 ADD Gemfile.lock $APP_HOME/
 
-RUN bundle install
+RUN bundle install --jobs=4
